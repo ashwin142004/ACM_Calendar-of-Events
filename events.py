@@ -15,7 +15,10 @@ st.set_page_config(page_title="ACM Calendar", page_icon="📅", layout="wide")
 # Logo and Title
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.image("logo.jpg", width=100)
+    st.image("acm_logo.png", width=100, use_column_width=False)
+    st.markdown(
+        "<style> img { border-radius: 50%; } </style>", unsafe_allow_html=True
+    )
 with col2:
     st.title("ACM Calendar of Events")
 
